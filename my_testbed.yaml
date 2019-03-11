@@ -19,8 +19,6 @@ devices:
               ip: 10.40.112.106
               port: 22
 
-testbed:
-  name: my_tb
 devices:
   rustphrbtqfb-2:
       type: asr1k
