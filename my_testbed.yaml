@@ -1,10 +1,10 @@
 testbed:
-  name: 'my_tb'
+  name: my_tb
 devices:
   rustphrbtqfb-1:
       type: asr1k
-      os: "iosxe"
-      alias: 'rustphrbtqfb-1'
+      os: iosxe
+      alias: rustphrbtqfb-1
       tacacs:
           username: admin
       passwords:
@@ -13,8 +13,30 @@ devices:
           line: bbc987
       connections:
           defaults:
-            class: 'unicon.Unicon'
+            class: unicon.Unicon
           a:
               protocol: ssh
-              ip: "10.40.112.106"
+              ip: 10.40.112.106
               port: 22
+
+testbed:
+  name: my_tb
+devices:
+  rustphrbtqfb-2:
+      type: asr1k
+      os: iosxe
+      alias: rustphrbtqfb-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.40.112.107
+              port: 22
+
