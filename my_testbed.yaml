@@ -1,7 +1,7 @@
 testbed:
   name: 'my_tb'
 devices:
-  rustphrbtqfb-100:
+  rustphrbtqfb-1:
       type: asr1k
       os: "iosxe"
       alias: 'rustphrbtqfb-1'
