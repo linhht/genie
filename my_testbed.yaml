@@ -19,7 +19,6 @@ devices:
               ip: 10.40.112.106
               port: 22
 
-devices:
   rustphrbtqfb-2:
       type: asr1k
       os: iosxe
@@ -37,4 +36,3 @@ devices:
               protocol: ssh
               ip: 10.40.112.107
               port: 22
-
