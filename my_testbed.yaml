@@ -6,7 +6,7 @@ devices:
       os: iosxe
       alias: rustphrbtqfb-1
       tacacs:
-          username: admin
+          username: root
       passwords:
           tacacs: bbc987
           enable: bbc987
@@ -16,7 +16,7 @@ devices:
             class: unicon.Unicon
           a:
               protocol: ssh
-              ip: 10.40.112.105
+              ip: 10.40.112.106
               port: 22
 
   rustphrbtqfb-2:
