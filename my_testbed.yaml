@@ -16,7 +16,7 @@ devices:
             class: unicon.Unicon
           a:
               protocol: ssh
-              ip: 10.40.112.106
+              ip: 10.40.112.105
               port: 22
 
 devices:
