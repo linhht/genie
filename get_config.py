@@ -28,7 +28,7 @@ if len(sys.argv) < 2:
             with open('config/running-config_' + str(device.name) + '.txt', 'wb') as f:
                 pickle.dump(output_pre, f)
             f.close()
-            logfile.write('Get config of ' + str(device) + '---DONE!!!' + ''\n')
+            logfile.write('Get config of ' + str(device) + '---DONE!!!' + '\n')
             device.disconnect()
         except:
             print('Failed to establish connection to ' + str(device) + '\n')
