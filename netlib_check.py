@@ -35,7 +35,7 @@ def check_bgp_status():
     for k,v in output['vrf']['default']['neighbor'].items():
         if v['address_family']['ipv4 unicast']['state_pfxrcd'].isdigit():
             print('Neighbor: ' + k + 'is UP and receive ' + str(v['address_family']['ipv4 unicast']['state_pfxrcd']) + ' prefixes')
-            logfile.write('Neighbor: ' + k + 'is UP and receive ' + str(v['address_family']['ipv4 unicast']['state_pfxrcd']) + ' prefixes' + '\n')
+            logfile.write('Neighbor: ' + k + ' is UP and receive ' + str(v['address_family']['ipv4 unicast']['state_pfxrcd']) + ' prefixes' + '\n')
             continue
         print('Neighbor: ' + k + 'is NOK')
         logfile.write('Neighbor: ' + k + 'is NOK' + '\n')
