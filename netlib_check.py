@@ -22,6 +22,7 @@ def check_bgp_status():
     if len(sys.argv) < 2:   #if there is NO hostname arg
         print('Please input the device name')
         print('Usage: python netlib_check.py <device_hostname>')
+        Main()
         #sys.exit()    
     dev = ' '.join(sys.argv[1:])    #if there is hostname, put it in 'dev' variable
     print('Get BGP status of ' + str(dev) + '\n')
@@ -41,21 +42,23 @@ def check_bgp_status():
         logfile.write('Neighbor: ' + k + 'is NOK' + '\n')
     logfile.close()
     device.disconnect()
+    Main()
     #sys.exit()
     
 ############################## Main program ###############################
-while (True):
-    print('\n\n##################################################')
-    print('1-Check interface status')
-    print('2-Check BGP status')
-    print('3-Exit')
-    print('##################################################\n\n')
-    prompt = input('Please select from above option: ')
-    if (prompt == "1"):
-        print('1-Proceed Check interface status \n\n')
-        #check_And_Change()
-    elif (prompt == "2"):
-        print('2-Check BGP status \n\n')
-        check_bgp_status()
-    elif (prompt == "3"):
-        break
+def Main():
+    while (True):
+        print('\n\n##################################################')
+        print('1-Check interface status')
+        print('2-Check BGP status')
+        print('3-Exit')
+        print('##################################################\n\n')
+        prompt = input('Please select from above option: ')
+        if (prompt == "1"):
+            print('1-Proceed Check interface status \n\n')
+            #check_And_Change()
+        elif (prompt == "2"):
+            print('2-Check BGP status \n\n')
+            check_bgp_status()
+        elif (prompt == "3"):
+            break
