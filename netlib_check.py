@@ -46,7 +46,6 @@ def check_bgp_status():
     #sys.exit()
     
 ############################## Main program ###############################
-def Main():
     while (True):
         print('\n\n##################################################')
         print('1-Check interface status')
@@ -62,4 +61,3 @@ def Main():
             check_bgp_status()
         elif (prompt == "3"):
             break
-     sys.exit()
