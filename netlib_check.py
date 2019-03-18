@@ -41,7 +41,7 @@ def check_bgp_status():
         logfile.write('Neighbor: ' + k + 'is NOK' + '\n')
     logfile.close()
     device.disconnect()
-    continue
+    #continue
     #sys.exit()
     
 ############################## Main program ###############################
