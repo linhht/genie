@@ -28,6 +28,6 @@ while (True):
         #check_And_Change()
     elif (prompt == "2"):
         print('2-Check BGP status \n\n')
-        check_bgp_status()
+        #check_bgp_status()
     elif (prompt == "3"):
         break
