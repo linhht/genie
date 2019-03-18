@@ -22,8 +22,7 @@ def check_bgp_status():
     if len(sys.argv) < 2:   #if there is NO hostname arg
         print('Please input the device name')
         print('Usage: python netlib_check.py <device_hostname>')
-        continue
-        #sys.exit()    
+        sys.exit()    
     dev = ' '.join(sys.argv[1:])    #if there is hostname, put it in 'dev' variable
     print('Get BGP status of ' + str(dev) + '\n')
     logfile.write('Get BGP status of ' + str(dev) + '\n')
