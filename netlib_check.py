@@ -12,8 +12,8 @@ from ats.topology import loader
 from genie.conf import Genie
 
 ############################## Define functions ###############################
-def check_bgp_status():
-
+#def check_bgp_status():
+    
 
 ############################## Main program ###############################
 while (True):
