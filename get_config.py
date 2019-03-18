@@ -3,19 +3,18 @@
 # get_config.py usage:
 # python get_config.py - get config of multiple devices from my_testbed.yaml file
 # python get_config.py <device_hostname> - get config of a specific device, device must exist in my_testbed.yaml file
+# remember to creat 'config' folder before running script
 
 ############################## Import neccessary libraries/modules ###############################
 import pickle
 import sys
 import pprint
-import os
 from ats.topology import loader
 from genie.conf import Genie
 
 #define global variables
 testbed = loader.load('my_testbed.yaml')
 genie_testbed = Genie.init(testbed)
-os.mkdir('config')
 logfile = open('log.txt', 'w+')
 
 # python get_config.py - get config of multiple devices from my_testbed.yaml file
