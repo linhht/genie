@@ -15,15 +15,15 @@ from genie.conf import Genie
 testbed = loader.load('/root/workspace/devnet-2595/workshop/genie/my_testbed.yaml') #location of testbed file
 genie_testbed = Genie.init(testbed) #load testbed file to genie
 logfile = open('log_netlib_check.txt', 'w+')    #open logfie
+###Check input argument
+if len(sys.argv) < 2:   #if there is NO hostname arg
+    print('Please input the device name')
+    print('Usage: python netlib_check.py <device_hostname>')
+    sys.exit()    
+dev = ' '.join(sys.argv[1:])    #if there is hostname, put it in 'dev' variable
 
 ############################## Define functions ###############################
 def check_bgp_status():
-    ###Check input argument
-    if len(sys.argv) < 2:   #if there is NO hostname arg
-        print('Please input the device name')
-        print('Usage: python netlib_check.py <device_hostname>')
-        sys.exit()    
-    dev = ' '.join(sys.argv[1:])    #if there is hostname, put it in 'dev' variable
     print('Get BGP status of ' + str(dev) + '\n')
     logfile.write('Get BGP status of ' + str(dev) + '\n')
     device = genie_testbed.devices[str(dev)]    #get device from testbed file
@@ -39,8 +39,8 @@ def check_bgp_status():
             continue
         print('Neighbor: ' + k + 'is NOK')
         logfile.write('Neighbor: ' + k + 'is NOK' + '\n')
-    logfile.close()
-    device.disconnect()
+    #logfile.close()
+    #device.disconnect()
     #continue
     #sys.exit()
     
