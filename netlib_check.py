@@ -22,7 +22,7 @@ def check_bgp_status():
     if len(sys.argv) < 2:   #if there is NO hostname arg
         print('Please input the device name')
         print('Usage: python netlib_check.py <device_hostname>')
-        Main()
+        continue
         #sys.exit()    
     dev = ' '.join(sys.argv[1:])    #if there is hostname, put it in 'dev' variable
     print('Get BGP status of ' + str(dev) + '\n')
@@ -42,7 +42,7 @@ def check_bgp_status():
         logfile.write('Neighbor: ' + k + 'is NOK' + '\n')
     logfile.close()
     device.disconnect()
-    Main()
+    continue
     #sys.exit()
     
 ############################## Main program ###############################
@@ -62,3 +62,4 @@ def Main():
             check_bgp_status()
         elif (prompt == "3"):
             break
+     sys.exit()
