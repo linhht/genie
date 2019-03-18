@@ -8,12 +8,14 @@
 import pickle
 import sys
 import pprint
+import os
 from ats.topology import loader
 from genie.conf import Genie
 
 #define global variables
 testbed = loader.load('my_testbed.yaml')
 genie_testbed = Genie.init(testbed)
+os.mkdir('config')
 logfile = open('log.txt', 'w+')
 
 # python get_config.py - get config of multiple devices from my_testbed.yaml file
