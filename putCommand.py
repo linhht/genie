@@ -17,14 +17,26 @@ testbed = loader.load('my_testbed.yaml')
 genie_testbed = Genie.init(testbed)
 logfile = open('log.txt', 'w+')
 
+#Define readCommandFile()
+def readCommandFile(cmdFile):
+  with open(cmd_file) as f:
+    cmd = f.read().splitlines()
+  return cmd
+  
+#Define putCommand()
+def putCommand(dev, cmdList):
+  device = genie_testbed.devices[str(dev)]
+  device.connect()
+  for cmd in cmdList
+    device.execute(str(cmd))
+  device.disconnect()
+
 #Main program
 dev = ' '.join(sys.argv[1:])                                #Store sys argument to dev var
 print('Put command on ' + str(dev) + '\n')
 logfile.write('Put command on ' + str(dev) + '\n')
-device = genie_testbed.devices[str(dev)]
-device.connect()
-device.execute('sh ip int bri')
-device.disconnect()
+cmdList = readCommandFile('cmd.txt')
+putCommand(dev, cmdList)
 logfile.write('Put command on ' + str(dev) + '---DONE!!!' + '\n')
 logfile.close()
 sys.exit()
