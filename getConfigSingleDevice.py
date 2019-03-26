@@ -23,9 +23,9 @@ if len(sys.argv) < 2:                                       #If user do not ente
         print('Usage: python getConfigSingleDevice.py <device_hostname>')
         sys.exit()
 dev = ' '.join(sys.argv[1:])                                #Store sys argument to dev var
+print('Get config of ' + str(dev) + '\n')               #Print out the msg on terminal
 logfile.write('Get config of ' + str(dev) + '\n')       #Write msg to log file
 device = genie_testbed.devices[str(dev)]                #Get device from genie_testbed var
 getconfig(deivce)                                              #Call getconfig() function with dev as argument
 logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
 logfile.close()                                         #Close log file
-
