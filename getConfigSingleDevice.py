@@ -10,7 +10,7 @@ import sys
 import pprint
 from ats.topology import loader
 from genie.conf import Genie
-from getconfig import getconfig
+import getconfig
 
 #Define global variables
 testbed = loader.load('my_testbed.yaml')
