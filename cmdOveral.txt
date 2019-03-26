@@ -7,8 +7,8 @@ sh run int tu 10 | inc nhs
 sh run int tu 20 | inc nhs
 sh run int tu 30 | inc nhs
 sh ip route | i B   p
-iwan master status
+iwan master status | i Minimum
 iwan master exits
-iwan border status
+iwan border status | i Minimum
 show virtual-service list
 show service-insertion alarms
