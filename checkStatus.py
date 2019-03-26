@@ -35,7 +35,7 @@ def putCommand(dev, cmdList):
 #Main program
 while (True):
        print('\n\n##################################################')
-       print('1-Check overal status: interface, dmvpn, BGP, ip route')
+       print('1-Check overal status: interface, dmvpn, BGP, ip route, PFR, Waas')
        print('2-Check BGP status')
        print('2-Check BGP status')
        print('2-Check BGP status')
@@ -47,7 +47,7 @@ while (True):
        print('##################################################\n\n')
        prompt = input('Please select from above option: ')
        if (prompt == "1"):
-           print('1-Check overal status: interface, dmvpn, BGP, ip route \n\n')
+           print('1-Check overal status: interface, dmvpn, BGP, ip route, PFR, Waas \n\n')
            cmdList = readCommandFile('cmdOveral.txt')
            dev = sys.argv[1]
            putCommand(dev, cmdList)
