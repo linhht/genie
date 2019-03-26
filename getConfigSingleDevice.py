@@ -23,4 +23,8 @@ if len(sys.argv) < 2:                                       #If user do not ente
         print('Usage: python getConfigSingleDevice.py <device_hostname>')
         sys.exit()
 dev = ' '.join(sys.argv[1:])                                #Store sys argument to dev var
+logfile.write('Get config of ' + str(dev) + '\n')       #Write msg to log file
 getconfig(dev)                                              #Call getconfig() function with dev as argument
+logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
+logfile.close()                                         #Close log file
+    
