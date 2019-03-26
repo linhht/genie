@@ -27,7 +27,7 @@ def readCommandFile(cmdFile):
 def putCommand(dev, cmdList):
   device = genie_testbed.devices[str(dev)]
   device.connect()
-  for cmd in cmdList
+  for cmd in cmdList:
     device.execute(str(cmd))
   device.disconnect()
 
@@ -35,8 +35,8 @@ def putCommand(dev, cmdList):
 dev = ' '.join(sys.argv[1:])                                #Store sys argument to dev var
 print('Put command on ' + str(dev) + '\n')
 logfile.write('Put command on ' + str(dev) + '\n')
-#cmdList = readCommandFile('cmd.txt')
-putCommand(dev, readCommandFile('cmd.txt'))
+cmdList = readCommandFile('cmd.txt')
+putCommand(dev, cdmList)
 logfile.write('Put command on ' + str(dev) + '---DONE!!!' + '\n')
 logfile.close()
 sys.exit()
