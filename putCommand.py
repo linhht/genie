@@ -36,7 +36,7 @@ dev = ' '.join(sys.argv[1:])                                #Store sys argument 
 print('Put command on ' + str(dev) + '\n')
 logfile.write('Put command on ' + str(dev) + '\n')
 cmdList = readCommandFile('cmd.txt')
-putCommand(dev, cdmList)
+putCommand(dev, cmdList)
 logfile.write('Put command on ' + str(dev) + '---DONE!!!' + '\n')
 logfile.close()
 sys.exit()
