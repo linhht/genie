@@ -19,7 +19,7 @@ logfile = open('log.txt', 'w+')
 
 #Define readCommandFile()
 def readCommandFile(cmdFile):
-  with open(cmd_file) as f:
+  with open(cmdFile) as f:
     cmd = f.read().splitlines()
   return cmd
   
