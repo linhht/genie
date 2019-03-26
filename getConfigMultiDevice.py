@@ -25,14 +25,14 @@ if len(sys.argv) > 1:                                       #If user do enter mo
         sys.exit()
 print('Get config of multiple devices from my_testbed.yaml file')
 for device in genie_testbed.devices.values():
-    print('Get config of ' + str(device) + '\n')
-    logfile.write('Get config of ' + str(device) + '\n')
-    try:
-        getconfig(device)
-    except:
-        print('Failed to establish connection to ' + str(device) + '\n')
-        logfile.write('Failed to establish connection to ' + str(device) + '\n')
-        continue
+        print('Get config of ' + str(device) + '\n')
+        logfile.write('Get config of ' + str(device) + '\n')
+        try:
+                getconfig(device)
+        except:
+                print('Failed to establish connection to ' + str(device) + '\n')
+                logfile.write('Failed to establish connection to ' + str(device) + '\n')
+                continue
 logfile.close()
 sys.exit()
 
