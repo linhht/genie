@@ -6,7 +6,7 @@ devices:
       os: iosxe
       alias: rustphrbtqfb-1
       tacacs:
-          username: admin
+          username: root
       passwords:
           tacacs: bbc987
           enable: bbc987
