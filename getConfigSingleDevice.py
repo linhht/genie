@@ -26,6 +26,6 @@ dev = ' '.join(sys.argv[1:])                                #Store sys argument 
 print('Get config of ' + str(dev) + '\n')               #Print out the msg on terminal
 logfile.write('Get config of ' + str(dev) + '\n')       #Write msg to log file
 device = genie_testbed.devices[str(dev)]                #Get device from genie_testbed var
-getconfig(deivce)                                              #Call getconfig() function with dev as argument
+getconfig()                                              #Call getconfig()
 logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
 logfile.close()                                         #Close log file
