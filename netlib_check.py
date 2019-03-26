@@ -2,7 +2,7 @@
 # netlib_check.py - get current config of device, check & troubleshoot the state.
 # Usage:
 #   python netlib_check.py <device_hostname> - device must exist in my_testbed.yaml file
-# 
+# my_testbed.yaml file must exist in current working directory
 
 ############################## Import neccessary libraries/modules ###############################
 import pickle
