@@ -32,10 +32,25 @@ def putCommand(dev, cmdList):
   device.disconnect()
 
 #Main program
-#cmdFile = ' '.join(sys.argv[1:])                            #Store 1st sys argument to cmdFile var
-cmdFile = sys.argv[1]
-#dev = ' '.join(sys.argv[2:])                                #Store 2nd sys argument to dev var
-dev = sys.argv[2]
+if len(sys.argv) < 3:                                       #If user do not enter <device_hostname>
+    print('Put command on multiple devices from my_testbed.yaml file'+'\n')
+    cmdFile = sys.argv[1]
+    cmdList = readCommandFile(str(cmdFile))
+    for dev in genie_testbed.devices.keys():
+        print('Put command on ' + str(dev) + '\n')
+        logfile.write('Put command on ' + str(dev) + '\n')
+        try:
+                putCommand(dev, cmdList)
+                logfile.write('Put command on ' + str(dev) + '---DONE!!!' + '\n')
+        except:
+                print('Failed to establish connection to ' + str(dev) + '\n')
+                logfile.write('Failed to establish connection to ' + str(dev) + '\n')
+                continue
+    logfile.close()
+    sys.exit()
+#If user do not enter <device_hostname> -- len(sys.argv) = 3, start from 0, end at 2
+cmdFile = sys.argv[1]                                        #Store 1st sys argument to cmdFile var
+dev = sys.argv[2]                                            #Store 2nd sys argument to dev var
 print('Put command on ' + str(dev) + '\n')
 logfile.write('Put command on ' + str(dev) + '\n')
 cmdList = readCommandFile(str(cmdFile))
