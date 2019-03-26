@@ -1,0 +1,2 @@
+sh int desc
+sh dmvpn
