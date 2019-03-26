@@ -17,7 +17,7 @@ genie_testbed = Genie.init(testbed)
 logfile = open('log.txt', 'w+')
 
 #Define getconfig() function
-def getconfig(dev)
+def getconfig(dev):
     print('Get config of ' + str(dev) + '\n')
     logfile.write('Get config of ' + str(dev) + '\n')
     device = genie_testbed.devices[str(dev)]
