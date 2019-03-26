@@ -21,7 +21,10 @@ logfile = open('log.txt', 'w+')
 dev = ' '.join(sys.argv[1:])                                #Store sys argument to dev var
 print('Put command on ' + str(dev) + '\n')
 logfile.write('Put command on ' + str(dev) + '\n')
+device = genie_testbed.devices[str(dev)]
+device.connect()
 device.execute('sh ip int bri')
+device.disconnect()
 logfile.write('Put command on ' + str(dev) + '---DONE!!!' + '\n')
 logfile.close()
 sys.exit()
