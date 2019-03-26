@@ -15,6 +15,7 @@ import sys
 import pprint
 from ats.topology import loader
 from genie.conf import Genie
+import csv
 
 #Define global variables
 testbed = loader.load('my_testbed.yaml')
