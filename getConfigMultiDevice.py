@@ -19,7 +19,7 @@ genie_testbed = Genie.init(testbed)
 logfile = open('log.txt', 'w+')
 
 #Main program
-if len(sys.argv) > 2:                                       #If user do enter more than one argument
+if len(sys.argv) > 1:                                       #If user do enter more than one argument
         print('You do not need to input the argument')
         print('Usage: python python getConfigMultiDevice.py')
         sys.exit()
