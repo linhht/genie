@@ -32,8 +32,10 @@ def putCommand(dev, cmdList):
   device.disconnect()
 
 #Main program
-cmdFile = ' '.join(sys.argv[1:])                            #Store 1st sys argument to cmdFile var
-dev = ' '.join(sys.argv[2:])                                #Store 2nd sys argument to dev var
+#cmdFile = ' '.join(sys.argv[1:])                            #Store 1st sys argument to cmdFile var
+cmdFile = sys.argv[1]
+#dev = ' '.join(sys.argv[2:])                                #Store 2nd sys argument to dev var
+dev = sys.argv[2]
 print('Put command on ' + str(dev) + '\n')
 logfile.write('Put command on ' + str(dev) + '\n')
 cmdList = readCommandFile(str(cmdFile))
