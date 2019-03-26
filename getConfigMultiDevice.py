@@ -37,8 +37,8 @@ if len(sys.argv) > 1:                                       #If user do enter mo
         print('You do not need to input the argument')
         print('Usage: python getConfigMultiDevice.py')
         sys.exit()
-print('Get config of multiple devices from my_testbed.yaml file')
-for dev in genie_testbed.devices.values():
+print('Get config of multiple devices from my_testbed.yaml file'+'\n')
+for dev in genie_testbed.devices.keys():
         print('Get config of ' + str(dev) + '\n')
         logfile.write('Get config of ' + str(dev) + '\n')
         try:
