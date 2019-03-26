@@ -28,7 +28,13 @@ def readCommandRouterFile(cmdRouterFile):
     csvf = csv.reader(f)
     data = list(csvf)
   return data
-  
+
+#Define readCommandFile()
+def readCommandFile(cmdFile):
+  with open(cmdFile) as f:
+    cmd = f.read().splitlines()
+  return cmd
+
 #Define putCommand()
 def putCommand(dev, cmdList):
   device = genie_testbed.devices[str(dev)]
