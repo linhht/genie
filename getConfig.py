@@ -30,8 +30,24 @@ def getconfig(dev):
     
 #Main program
 if len(sys.argv) < 2:                                       #If user do not enter <device_hostname>
-        print('You need to input the <device_hostname>')
-        print('Usage: python getConfigSingleDevice.py <device_hostname>')
-        sys.exit()
+    print('Get config of multiple devices from my_testbed.yaml file'+'\n')
+    for dev in genie_testbed.devices.keys():
+        print('Get config of ' + str(dev) + '\n')
+        logfile.write('Get config of ' + str(dev) + '\n')
+        try:
+                getconfig(dev)
+                logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
+        except:
+                print('Failed to establish connection to ' + str(dev) + '\n')
+                logfile.write('Failed to establish connection to ' + str(dev) + '\n')
+                continue
+    logfile.close()
+    sys.exit()
 dev = ' '.join(sys.argv[1:])                                #Store sys argument to dev var
+print('Get config of ' + str(dev) + '\n')
+logfile.write('Get config of ' + str(dev) + '\n')
 getconfig(dev)                                              #Call getconfig() function with dev as argument
+logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
+logfile.close()
+sys.exit()
+
