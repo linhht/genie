@@ -24,7 +24,8 @@ if len(sys.argv) < 2:                                       #If user do not ente
         sys.exit()
 dev = ' '.join(sys.argv[1:])                                #Store sys argument to dev var
 logfile.write('Get config of ' + str(dev) + '\n')       #Write msg to log file
-getconfig(dev)                                              #Call getconfig() function with dev as argument
+device = genie_testbed.devices[str(dev)]                #Get device from genie_testbed var
+getconfig(deivce)                                              #Call getconfig() function with dev as argument
 logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
 logfile.close()                                         #Close log file
-    
+
