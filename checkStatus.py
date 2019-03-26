@@ -54,5 +54,4 @@ while (True):
            print('2-Check BGP status \n\n')
            #check_bgp_status()
        elif (prompt == "9"):
-           device.disconnect()
            break
