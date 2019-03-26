@@ -6,7 +6,7 @@ from ats.topology import loader
 from genie.conf import Genie
 
 #Define getconfig() function
-def getconfig(device):
+def getconfig():
     device.connect()                                        #Connect to device
     output_pre = device.parse('show running-config')        #Parse 'show run' cmd & store to outout_pre structure object
     with open('config/running-config_' + str(device.name) + '.txt', 'wb') as f:
