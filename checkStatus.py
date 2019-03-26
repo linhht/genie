@@ -49,6 +49,7 @@ while (True):
        if (prompt == "1"):
            print('1-Check overal status: interface, dmvpn, BGP, ip route \n\n')
            cmdList = readCommandFile('cmdOveral.txt')
+           dev = sys.argv[1]
            putCommand(dev, cmdList)
        elif (prompt == "2"):
            print('2-Check BGP status \n\n')
