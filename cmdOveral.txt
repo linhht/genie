@@ -1,0 +1,13 @@
+sh ip int bri
+sh bgp sum
+sh ip route vrf FD-MPLS
+sh ip route vrf FD-INET
+sh dmvpn | i S
+sh run int tu 10 | inc nhs
+sh run int tu 20 | inc nhs
+sh run int tu 30 | inc nhs
+sh ip route | i B   p
+iwan master status
+iwan master exits
+iwan border status
+show service-insertion alarms
