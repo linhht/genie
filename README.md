@@ -10,3 +10,13 @@
 # python checkConfig.py <device_hostname> - get & compare config of a specific device, device must exist in my_testbed.yaml file
 # my_testbed.yaml file must exist in current working directory
 # pre-stored config must be collected & put to 'config' directory first
+
+# putSpecificCommand.py - put specific command/commands from cmd file to specific devices.
+# cmd file & list of devices are in cmdRouter.csv.
+# Usage:
+#   python putSpecificCommand.py cmdRouter.csv - put command on a device, device must exist in my_testbed.yaml file
+# my_testbed.yaml file must exist in current working directory
+# cmdRouter.csv file must exist in current working directory
+# Example of cmdRouter.csv:
+#  rustphrbtqfb-1.txt,rustphrbtqfb-1
+#  rustphrbtqfb-2.txt,rustphrbtqfb-2
