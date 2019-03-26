@@ -44,7 +44,7 @@ if len(sys.argv) < 2:                                       #If user do not ente
 #If user do enter cmdRouter.csv
 cmdRouterFile = sys.argv[1]                                  #Store 1st sys argument to cmdRouterFile var
 data = readCommandRouterFile(cmdRouterFile)
-for i in range (1,len(data),1):                              #len(data) = number of rows/ devices in csv file
+for i in range (0,len(data),1):                              #len(data) = number of rows/ devices in csv file
    cmdFile = data[i][0]                                      #cdmFile in column 0
    dev = data[i][1]                                          #dev in column 1                                            
    print('Put command on ' + str(dev) + '\n')
