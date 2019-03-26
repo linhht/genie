@@ -10,4 +10,5 @@ sh ip route | i B   p
 iwan master status
 iwan master exits
 iwan border status
+show virtual-service list
 show service-insertion alarms
