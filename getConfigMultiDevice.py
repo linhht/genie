@@ -19,19 +19,14 @@ logfile = open('log.txt', 'w+')
 
 #Define getconfig() function
 def getconfig(dev):
-    print('Get config of ' + str(dev) + '\n')               #Print out the msg on terminal
-    logfile.write('Get config of ' + str(dev) + '\n')       #Write msg to log file
     device = genie_testbed.devices[str(dev)]                #Get device from genie_testbed var
     device.connect()                                        #Connect to device
     output_pre = device.parse('show running-config')        #Parse 'show run' cmd & store to outout_pre structure object
     with open('config/running-config_' + str(device.name) + '.txt', 'wb') as f:
         pickle.dump(output_pre, f)                          #Write outout_pre structure object to txt file use pickle
     f.close()
-    logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
-    logfile.close()                                         #Close log file
     device.disconnect()                                     #Disconnect from device
-    sys.exit()                                              #Exist program
-
+    
 #Main program
 if len(sys.argv) > 1:                                       #If user do enter more than one argument
         print('You do not need to input the argument')
@@ -43,6 +38,7 @@ for dev in genie_testbed.devices.keys():
         logfile.write('Get config of ' + str(dev) + '\n')
         try:
                 getconfig(dev)
+                logfile.write('Get config of ' + str(dev) + '---DONE!!!' + '\n')
         except:
                 print('Failed to establish connection to ' + str(dev) + '\n')
                 logfile.write('Failed to establish connection to ' + str(dev) + '\n')
