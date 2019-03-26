@@ -34,7 +34,7 @@ def getconfig(dev):
 #Main program
 if len(sys.argv) < 2:
         print('You need to input the <device_hostname>')
-        print('Usage python getConfigSingleDevice.py <device_hostname>')
+        print('Usage: python getConfigSingleDevice.py <device_hostname>')
         sys.exit()
 dev = ' '.join(sys.argv[1:])
 getconfig(dev)
