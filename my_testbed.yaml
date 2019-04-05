@@ -1,6 +1,3282 @@
 testbed:
   name: my_tb
 devices:
+  aedxbhrddf-1:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrddf-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.130
+              port: 22
+
+  aedxbhrddf-2:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrddf-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.131
+              port: 22
+
+  aedxbhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.202
+              port: 22
+
+  aedxbhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.203
+              port: 22
+
+  aedxbhrmal-1:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrmal-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.206
+              port: 22
+
+  aedxbhrmal-2:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrmal-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.207
+              port: 22
+
+  aedxbhrmoe-1:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrmoe-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.204
+              port: 22
+
+  aedxbhrmoe-2:
+      type: asr1k
+      os: iosxe
+      alias: aedxbhrmoe-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.205
+              port: 22
+
+  atviehrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: atviehrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.66
+              port: 22
+
+  atviehrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: atviehrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.67
+              port: 22
+
+  bebruhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: bebruhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.40
+              port: 22
+
+  bebruhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: bebruhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.41
+              port: 22
+
+  chchahrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: chchahrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.20
+              port: 22
+
+  chchahrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: chchahrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.21
+              port: 22
+
+  chgenhrbg-1:
+      type: asr1k
+      os: iosxe
+      alias: chgenhrbg-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.106
+              port: 22
+
+  chgenhrbo-1:
+      type: asr1k
+      os: iosxe
+      alias: chgenhrbo-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.38
+              port: 22
+
+  chgenhrrho-1:
+      type: asr1k
+      os: iosxe
+      alias: chgenhrrho-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.50
+              port: 22
+
+  chgenhrrho-2:
+      type: asr1k
+      os: iosxe
+      alias: chgenhrrho-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.51
+              port: 22
+
+  chzurhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: chzurhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.36
+              port: 22
+
+  chzurhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: chzurhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.37
+              port: 22
+
+  deberhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: deberhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.42
+              port: 22
+
+  deberhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: deberhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.43
+              port: 22
+
+  deberhrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: deberhrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.2
+              port: 22
+
+  deberhrkad-1:
+      type: asr1k
+      os: iosxe
+      alias: deberhrkad-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.22.78
+              port: 22
+
+  deberhrkad-2:
+      type: asr1k
+      os: iosxe
+      alias: deberhrkad-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.22.79
+              port: 22
+
+  dedushrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: dedushrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.46
+              port: 22
+
+  dedushrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: dedushrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.47
+              port: 22
+
+  dedushrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: dedushrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.240
+              port: 22
+
+  defrahrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: defrahrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.48
+              port: 22
+
+  defrahrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: defrahrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.49
+              port: 22
+
+  dehamhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: dehamhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.34
+              port: 22
+
+  dehamhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: dehamhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.35
+              port: 22
+
+  dehamhrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: dehamhrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.216
+              port: 22
+
+  dehamhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: dehamhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.4
+              port: 22
+
+  dehamhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: dehamhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.5
+              port: 22
+
+  demunhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: demunhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.32
+              port: 22
+
+  demunhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: demunhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.33
+              port: 22
+
+  dkcphbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: dkcphbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.6
+              port: 22
+
+  dkcphbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: dkcphbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.7
+              port: 22
+
+  dkcphhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: dkcphhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.236
+              port: 22
+
+  dkcphhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: dkcphhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.237
+              port: 22
+
+  esbarhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: esbarhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.33.81
+              port: 22
+
+  esbarhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: esbarhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.33.79
+              port: 22
+
+  esmadhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: esmadhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.8.78
+              port: 22
+
+  esmadhrbtq-1_test:
+      type: asr1k
+      os: iosxe
+      alias: esmadhrbtq-1_test
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.28
+              port: 22
+
+  esmadhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: esmadhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.8.79
+              port: 22
+
+  esmadhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: esmadhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.140
+              port: 22
+
+  esmadhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: esmadhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.141
+              port: 22
+
+  fr131rntlb01:
+      type: asr1k
+      os: iosxe
+      alias: fr131rntlb01
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.7.212.25
+              port: 22
+
+  fr131rntlb02:
+      type: asr1k
+      os: iosxe
+      alias: fr131rntlb02
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.7.212.26
+              port: 22
+
+  frcanhrfa-1:
+      type: asr1k
+      os: iosxe
+      alias: frcanhrfa-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.24
+              port: 22
+
+  frcanhrfa-2:
+      type: asr1k
+      os: iosxe
+      alias: frcanhrfa-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.25
+              port: 22
+
+  frcanhroth-1:
+      type: asr1k
+      os: iosxe
+      alias: frcanhroth-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.252
+              port: 22
+
+  frchahrcap-1:
+      type: asr1k
+      os: iosxe
+      alias: frchahrcap-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.28
+              port: 22
+
+  frcouhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: frcouhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.148
+              port: 22
+
+  frcouhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: frcouhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.149
+              port: 22
+
+  frdupmxt00:
+      type: asr1k
+      os: iosxe
+      alias: frdupmxt00
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.7.37.56
+              port: 22
+
+  frnichrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: frnichrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.44
+              port: 22
+
+  frnichrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: frnichrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.45
+              port: 22
+
+  frnichrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: frnichrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.214
+              port: 22
+
+  frnichrfb-2:
+      type: asr1k
+      os: iosxe
+      alias: frnichrfb-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.215
+              port: 22
+
+  frparhrbmf-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrbmf-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.110
+              port: 22
+
+  frparhrbmf-2:
+      type: asr1k
+      os: iosxe
+      alias: frparhrbmf-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.111
+              port: 22
+
+  frparhrfau-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrfau-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.136
+              port: 22
+
+  frparhrfau-2:
+      type: asr1k
+      os: iosxe
+      alias: frparhrfau-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.137
+              port: 22
+
+  frparhrfra-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrfra-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.210
+              port: 22
+
+  frparhrfra-2:
+      type: asr1k
+      os: iosxe
+      alias: frparhrfra-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.211
+              port: 22
+
+  frparhrgal-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrgal-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.138
+              port: 22
+
+  frparhrgal-2:
+      type: asr1k
+      os: iosxe
+      alias: frparhrgal-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.139
+              port: 22
+
+  frparhrhjs-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrhjs-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.52
+              port: 22
+
+  frparhrhjs-2:
+      type: asr1k
+      os: iosxe
+      alias: frparhrhjs-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.53
+              port: 22
+
+  frparhrmon-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrmon-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.7.213.1
+              port: 22
+
+  frparhrpri-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrpri-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.56
+              port: 22
+
+  frparhrpri-1_test:
+      type: asr1k
+      os: iosxe
+      alias: frparhrpri-1_test
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.56
+              port: 22
+
+  frparhrpri-2:
+      type: asr1k
+      os: iosxe
+      alias: frparhrpri-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.57
+              port: 22
+
+  frparhrpri-2_test:
+      type: asr1k
+      os: iosxe
+      alias: frparhrpri-2_test
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.57
+              port: 22
+
+  frparhrroy-1:
+      type: asr1k
+      os: iosxe
+      alias: frparhrroy-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.58
+              port: 22
+
+  frparhrroy-2:
+      type: asr1k
+      os: iosxe
+      alias: frparhrroy-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.59
+              port: 22
+
+  frroihrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: frroihrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.68
+              port: 22
+
+  frroihrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: frroihrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.69
+              port: 22
+
+  frstrhr201-1:
+      type: asr1k
+      os: iosxe
+      alias: frstrhr201-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.22
+              port: 22
+
+  frstrhr201-2:
+      type: asr1k
+      os: iosxe
+      alias: frstrhr201-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.23
+              port: 22
+
+  frsurhrwrh-1:
+      type: asr1k
+      os: iosxe
+      alias: frsurhrwrh-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.0
+              port: 22
+
+  frsurhrwrh-2:
+      type: asr1k
+      os: iosxe
+      alias: frsurhrwrh-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.1
+              port: 22
+
+  inbglrntlb01:
+      type: asr1k
+      os: iosxe
+      alias: inbglrntlb01
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.38.1.6
+              port: 22
+
+  inbglrntlb02:
+      type: asr1k
+      os: iosxe
+      alias: inbglrntlb02
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.38.1.7
+              port: 22
+
+  indelhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: indelhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.22
+              port: 22
+
+  indelhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: indelhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.23
+              port: 22
+
+  itflrhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: itflrhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.116
+              port: 22
+
+  itflrhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: itflrhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.117
+              port: 22
+
+  itflrhrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: itflrhrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.114
+              port: 22
+
+  itflrhrfb-2:
+      type: asr1k
+      os: iosxe
+      alias: itflrhrfb-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.115
+              port: 22
+
+  itmilhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: itmilhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.30
+              port: 22
+
+  itmilhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: itmilhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.31
+              port: 22
+
+  itmilhrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: itmilhrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.218
+              port: 22
+
+  itmilhrfb-2:
+      type: asr1k
+      os: iosxe
+      alias: itmilhrfb-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.219
+              port: 22
+
+  itmilhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: itmilhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.244
+              port: 22
+
+  itmilhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: itmilhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.245
+              port: 22
+
+  itromhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: itromhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.64
+              port: 22
+
+  itromhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: itromhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.65
+              port: 22
+
+  itromhrbtqii-1:
+      type: asr1k
+      os: iosxe
+      alias: itromhrbtqii-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.120
+              port: 22
+
+  itromhrbtqii-2:
+      type: asr1k
+      os: iosxe
+      alias: itromhrbtqii-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.121
+              port: 22
+
+  itscahrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: itscahrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.146
+              port: 22
+
+  itscahrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: itscahrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.147
+              port: 22
+
+  ittorhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: ittorhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.76
+              port: 22
+
+  ittorhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: ittorhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.77
+              port: 22
+
+  itvenhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: itvenhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.254
+              port: 22
+
+  itvenhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: itvenhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.255
+              port: 22
+
+  itvenhrii-1:
+      type: asr1k
+      os: iosxe
+      alias: itvenhrii-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.122
+              port: 22
+
+  itvenhrii-2:
+      type: asr1k
+      os: iosxe
+      alias: itvenhrii-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.123
+              port: 22
+
+  itvenhrsto-1:
+      type: asr1k
+      os: iosxe
+      alias: itvenhrsto-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.124
+              port: 22
+
+  itvenhrsto-2:
+      type: asr1k
+      os: iosxe
+      alias: itvenhrsto-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.125
+              port: 22
+
+  lbbeyhrwhs-1:
+      type: asr1k
+      os: iosxe
+      alias: lbbeyhrwhs-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.18
+              port: 22
+
+  lbbeyhrwhs-2:
+      type: asr1k
+      os: iosxe
+      alias: lbbeyhrwhs-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.19
+              port: 22
+
+  luluxhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: luluxhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.78
+              port: 22
+
+  luluxhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: luluxhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.79
+              port: 22
+
+  luluxhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: luluxhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.232
+              port: 22
+
+  luluxhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: luluxhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.233
+              port: 22
+
+  mcmcmhrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: mcmcmhrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.70
+              port: 22
+
+  mcmcmhrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: mcmcmhrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.71
+              port: 22
+
+  mcmcmhroth-1:
+      type: asr1k
+      os: iosxe
+      alias: mcmcmhroth-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.72
+              port: 22
+
+  mcmcmhroth-2:
+      type: asr1k
+      os: iosxe
+      alias: mcmcmhroth-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.73
+              port: 22
+
+  nlamshrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: nlamshrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.88
+              port: 22
+
+  nlamshrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: nlamshrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.89
+              port: 22
+
+  nlamshrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: nlamshrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.14
+              port: 22
+
+  nlamshrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: nlamshrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.234
+              port: 22
+
+  nlamshrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: nlamshrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.235
+              port: 22
+
+  ptlishrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: ptlishrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.12
+              port: 22
+
+  ptlishrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: ptlishrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.13
+              port: 22
+
+  qadohhrlag-1:
+      type: asr1k
+      os: iosxe
+      alias: qadohhrlag-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.116.78
+              port: 22
+
+  qadohhrlag-2:
+      type: asr1k
+      os: iosxe
+      alias: qadohhrlag-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.30.116.79
+              port: 22
+
+  rumoshrcro-1:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrcro-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.100
+              port: 22
+
+  rumoshrcro-2:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrcro-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.101
+              port: 22
+
+  rumoshrgen-1:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrgen-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.96
+              port: 22
+
+  rumoshrgen-2:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrgen-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.97
+              port: 22
+
+  rumoshrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.242
+              port: 22
+
+  rumoshrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.243
+              port: 22
+
+  rumoshrmet-1:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrmet-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.30
+              port: 22
+
+  rumoshrmet-2:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrmet-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.31
+              port: 22
+
+  rumoshrsea-1:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrsea-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.90
+              port: 22
+
+  rumoshrsea-2:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrsea-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.91
+              port: 22
+
+  rumoshrtsu-1:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrtsu-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.94
+              port: 22
+
+  rumoshrtsu-2:
+      type: asr1k
+      os: iosxe
+      alias: rumoshrtsu-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.95
+              port: 22
+
+  rustphrbab-1:
+      type: asr1k
+      os: iosxe
+      alias: rustphrbab-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.104
+              port: 22
+
+  rustphrbab-2:
+      type: asr1k
+      os: iosxe
+      alias: rustphrbab-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.105
+              port: 22
+
+  segothrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: segothrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.220
+              port: 22
+
+  semmohrfb-1:
+      type: asr1k
+      os: iosxe
+      alias: semmohrfb-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.246
+              port: 22
+
+  sestkhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: sestkhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.228
+              port: 22
+
+  sestkhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: sestkhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.229
+              port: 22
+
+  tristhrbag-1:
+      type: asr1k
+      os: iosxe
+      alias: tristhrbag-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.250
+              port: 22
+
+  tristhrbag-2:
+      type: asr1k
+      os: iosxe
+      alias: tristhrbag-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.251
+              port: 22
+
+  tristhrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: tristhrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.238
+              port: 22
+
+  tristhrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: tristhrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.239
+              port: 22
+
+  tristhrist-1:
+      type: asr1k
+      os: iosxe
+      alias: tristhrist-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.178
+              port: 22
+
+  tristhrist-2:
+      type: asr1k
+      os: iosxe
+      alias: tristhrist-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.179
+              port: 22
+
+  tristhrnis-1:
+      type: asr1k
+      os: iosxe
+      alias: tristhrnis-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.170
+              port: 22
+
+  tristhrnis-2:
+      type: asr1k
+      os: iosxe
+      alias: tristhrnis-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.171
+              port: 22
+
+  uakiehrbtq-1:
+      type: asr1k
+      os: iosxe
+      alias: uakiehrbtq-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.92
+              port: 22
+
+  uakiehrbtq-2:
+      type: asr1k
+      os: iosxe
+      alias: uakiehrbtq-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.224.93
+              port: 22
+
+  uakiehrhqr-1:
+      type: asr1k
+      os: iosxe
+      alias: uakiehrhqr-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.200
+              port: 22
+
+  uakiehrhqr-2:
+      type: asr1k
+      os: iosxe
+      alias: uakiehrhqr-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.201
+              port: 22
+
+  ukcrohrwrh-1:
+      type: asr1k
+      os: iosxe
+      alias: ukcrohrwrh-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.16
+              port: 22
+
+  ukcrohrwrh-2:
+      type: asr1k
+      os: iosxe
+      alias: ukcrohrwrh-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.17
+              port: 22
+
+  uklonhr173nbs-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhr173nbs-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.24
+              port: 22
+
+  uklonhrbar-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrbar-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.22
+              port: 22
+
+  uklonhrbar-2:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrbar-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.23
+              port: 22
+
+  uklonhrbur-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrbur-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.34
+              port: 22
+
+  uklonhrcvg-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrcvg-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.36
+              port: 22
+
+  uklonhrheat5-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrheat5-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.32
+              port: 22
+
+  uklonhrhh-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrhh-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.42
+              port: 22
+
+  uklonhrkno-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrkno-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.196
+              port: 22
+
+  uklonhrosm-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrosm-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.38
+              port: 22
+
+  uklonhrreg-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrreg-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.198
+              port: 22
+
+  uklonhrsel-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrsel-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.46
+              port: 22
+
+  uklonhrslo-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrslo-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.48
+              port: 22
+
+  uklonhrtal-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrtal-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.18
+              port: 22
+
+  uklonhrtal-2:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrtal-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.19
+              port: 22
+
+  uklonhrwal-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrwal-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.26
+              port: 22
+
+  uklonhrhds-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrhds-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.25.132.10
+              port: 22
+
+  uklonhrstp-1:
+      type: asr1k
+      os: iosxe
+      alias: uklonhrstp-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.248.54
+              port: 22
+
+  indelhrchanak-1:
+      type: asr1k
+      os: iosxe
+      alias: indelhrchanak-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.42.36.106
+              port: 22
+
+  indelhrchanak-2:
+      type: asr1k
+      os: iosxe
+      alias: indelhrchanak-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.42.36.107
+              port: 22
+
   rustphrbtqfb-1:
       type: asr1k
       os: iosxe
@@ -16,7 +3292,7 @@ devices:
             class: unicon.Unicon
           a:
               protocol: ssh
-              ip: 10.40.112.106
+              ip: 10.100.225.58
               port: 22
 
   rustphrbtqfb-2:
@@ -34,5 +3310,41 @@ devices:
             class: unicon.Unicon
           a:
               protocol: ssh
-              ip: 10.40.112.107
+              ip: 10.100.225.59
+              port: 22
+
+  mcmcmhrmxt-1:
+      type: asr1k
+      os: iosxe
+      alias: mcmcmhrmxt-1
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.50
+              port: 22
+
+  mcmcmhrmxt-2:
+      type: asr1k
+      os: iosxe
+      alias: mcmcmhrmxt-2
+      tacacs:
+          username: admin
+      passwords:
+          tacacs: bbc987
+          enable: bbc987
+          line: bbc987
+      connections:
+          defaults:
+            class: unicon.Unicon
+          a:
+              protocol: ssh
+              ip: 10.100.225.51
               port: 22
