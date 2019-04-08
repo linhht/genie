@@ -26,7 +26,7 @@ def readCommandFile(cmdFile):
 #Define putCommand()
 def putCommand(dev, cmdList):
   device = genie_testbed.devices[str(dev)]
-  device.connect()
+  device.connect(learn_hostname=True)
   for cmd in cmdList:
     device.execute(str(cmd))
   device.disconnect()
