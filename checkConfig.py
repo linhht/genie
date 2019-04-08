@@ -26,7 +26,7 @@ dev = ' '.join(sys.argv[1:])
 print('Get config of ' + str(dev) + '\n')
 logfile.write('Get config of ' + str(dev) + '\n')
 device = genie_testbed.devices[str(dev)]
-device.connect()
+device.connect(learn_hostname=True)
 output_post = device.parse('show running-config')
 with open('config/running-config_' + str(device.name) + '.txt', 'rb') as f:
     output_pre = pickle.load(f)
