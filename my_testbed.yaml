@@ -3205,10 +3205,11 @@ devices:
               ip: 10.100.248.26
               port: 22
 
-  UKLONHRHDS-1:
+  uklonhrhds-1:
       type: asr1k
       os: iosxe
-      alias: UKLONHRHDS-1
+      alias: uklonhrhds-1
+      learn_hostname: True
       tacacs:
           username: admin
       passwords:
