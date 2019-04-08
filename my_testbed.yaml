@@ -3205,7 +3205,7 @@ devices:
               ip: 10.100.248.26
               port: 22
 
-  uklonhrhds-1:
+  UKLONHRHDS-1:
       type: asr1k
       os: iosxe
       alias: uklonhrhds-1
