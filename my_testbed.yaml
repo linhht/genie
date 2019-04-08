@@ -3209,7 +3209,8 @@ devices:
       type: asr1k
       os: iosxe
       alias: uklonhrhds-1
-      learn_hostname: True
+      learn:
+          hostname: True
       tacacs:
           username: admin
       passwords:
