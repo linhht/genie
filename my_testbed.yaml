@@ -3208,7 +3208,7 @@ devices:
   UKLONHRHDS-1:
       type: asr1k
       os: iosxe
-      alias: uklonhrhds-1
+      alias: UKLONHRHDS-1
       tacacs:
           username: admin
       passwords:
