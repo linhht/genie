@@ -27,7 +27,7 @@ def check_bgp_status():
     print('Get BGP status of ' + str(dev) + '\n')
     logfile.write('Get BGP status of ' + str(dev) + '\n')
     device = genie_testbed.devices[str(dev)]    #get device from testbed file
-    device.connect()    #connect to device
+    device.connect(learn_hostname=True)    #connect to device
     output = device.parse('show bgp all summary')   #parse command 'show bgp all summary' to 'output' variable
     ### loop thru neighbors in output & check number of received prefixes
     ### if number of received prefixes is integer --> neighbor is OK
