@@ -1,6 +1,4 @@
-conf t
 int range gi0/0/0, tu30, tu100, tu200
 bandwidth 25000
 bandwidth receive 100000
-end
-wr
+do wr
