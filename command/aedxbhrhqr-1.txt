@@ -1,0 +1,9 @@
+conf t
+int range gi0/0/1, tu10
+bandwidth 2000
+bandwidth receive 2000
+int range gi0/0/0, tu20, tu100, tu200
+bandwidth 16000
+bandwidth receive 16000
+end
+wr
