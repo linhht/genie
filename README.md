@@ -27,5 +27,5 @@
 # my_testbed.yaml file must exist in current working directory
 # cmdRouter.csv file must exist in current working directory
 # Example of cmdRouter.csv:
-#  rustphrbtqfb-1.txt,rustphrbtqfb-1
-#  rustphrbtqfb-2.txt,rustphrbtqfb-2
+#  command/rustphrbtqfb-1.txt,rustphrbtqfb-1
+#  command/rustphrbtqfb-2.txt,rustphrbtqfb-2
