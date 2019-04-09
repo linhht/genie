@@ -1,4 +1,0 @@
-int lo2
-bandwidth 25000
-bandwidth receive 100000
-do wr
