@@ -1,0 +1,4 @@
+int range gi0/0/0, tu30, tu100, tu200
+bandwidth 300000
+bandwidth receive 300000
+do wr
